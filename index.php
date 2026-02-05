@@ -1,9 +1,9 @@
 <?php require_once('db.php'); ?>
-
+<?php require_once('header.php') ?>
 <?php if (isset($_SESSION['userid'])): ?>
     Hello, <?= $_SESSION['name'] ?> !
     <div><a href="logout.php">로그아웃</a></div>
-    <a href="#" style="display: flex; text-decoration: none; color: inherit;"><div style="background-color: skyblue; padding: 5px 20px;">글쓰기</div></a>
+    <a href="write.php" style="display: flex; text-decoration: none; color: inherit;"><div style="background-color: skyblue; padding: 5px 20px;">글쓰기</div></a>
 <?php else: ?>
     <form action="login_check.php" method="GET">
         <div>
@@ -18,3 +18,4 @@
         </div>
     </form>
 <?php endif; ?>
+<?php require_once('footer.php') ?>

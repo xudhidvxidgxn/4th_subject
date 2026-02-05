@@ -16,6 +16,7 @@
 
     $_SESSION['userid'] = $user->id;
     $_SESSION['name'] = $user->name;
+    $_SESSION['email'] = $user->email;
 
     header("Location: index.php");
     exit;

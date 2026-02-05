@@ -1,5 +1,6 @@
 <?php require_once('db.php'); ?>
-<!DOCTYPE html>
+<?php require_once('header.php') ?>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <title>signin 페이지</title>
 </head>
 
-<body>
+<body>-->
     <form method="GET">
         <div>
             <label for="email">Email </label>
@@ -29,6 +30,4 @@
         <button type="submit">회원가입</button>
     </form>
     <?php require_once('signin_check.php') ?>
-</body>
-
-</html>
+<?php require_once('footer.php') ?>
